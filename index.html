@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <title>Mr. Joram | Web Developer</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEAD SECTION -->
+        <div class="head">
+            <div id="date"></div>
+        </div>
+
+        <!-- MENU SECTION -->
+        <div class="menu">
+            <h3>WEB SYSTEMS DEVELOPER</h3>
+            <P>Mr. Joram</P>
+        </div>
+
+        <!-- ANNOUNCEMENT -->
+        <div class="announcement" id="anno"></div>
+
+        <!-- BODY SECTION -->
+        <div class="content">
+            <h3 class="content-header">About Me</h3> <hr>
+            <div><img src="image/joram0.png" alt="PICTURES" id="pic" width="100%"></div>
+
+            <p class="info">
+                I am Mr. Joram from Tanzania. I am a Computer Scientist. I specialize in web technologies. 
+                Web-based apps are apps that can be used via a browser like Firefox, Google chrome, Safari and Opera Mini.
+            </p>
+
+            <p class="info">
+                About 80% of Tanzanians use modern phones today to help them access the internet. 
+                A website is an important tool for helping you advertise your business as well as keep track of your business or service information.
+            </p>
+
+            <h3 class="content-header">My Services</h3> <hr>
+            <div id="content_list">
+                <div class="small-title">The following are among the services offered:</div> <br>
+                <ol id="content-list-items">
+                    <li class="list" onclick="show_list_content('business', this)">Business Information System <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="business">
+                        Business Information Systems provide information that organizations use in making better decisions 
+                        in the operations of an organization typically using computer systems and technology.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('school', this)">Student Information System <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="school">
+                        A <em>Student Information System (SIS), Student Management System, School Administration Software</em> or <em>Student 
+                        Administration System</em> is a management information system for education establishments used to manage student data. <br><br>
+                        Student information systems provide capabilities for <em>registering students</em> in courses; <em>documenting grading</em>, transcripts of 
+                        academic achievement and co-curricular activities, and the results of student assessment scores; <em>forming student schedules</em>; 
+                        <em>tracking student attendance</em>; and <em>managing</em> other student-related data needs in an educational institution.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('student', this)">Online Bus Ticket Reservation System <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="student">
+                        The <em>Online Bus Ticket Reservation System</em> is a web-based application that allows visitors check bus ticket
+                        availability, buy bus ticket and pay the bus ticket online. This system is
+                        established for all the home/office users after gaining access from the administrator. <br><br>
+
+                        The use of bus traveling is a large growing business in Tanzania and other countries; hence bus
+                        reservation system deals with maintenance of records of each passenger who had reserved a seat for a journey. It
+                        also includes maintenance of information like schedule and details of each bus.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('employee', this)">Employee Record Management System <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="employee">
+                        The Employee Management System is used by entrepreneurs to combine several key HR functions, such as storing employee data, managing salaries, employment processes, profit management, and keeping track of attendance records.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('hotel', this)">Hotel Management System <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="hotel">
+                        Information systems in the Hotel industry refer to computer systems in a hotel that supply information about that hotel’s business operations. <br><br>
+                        Information systems play a crucial role in the hotel industry as they facilitate planning, management, overall operations of the hotels as well as policymaking.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('blog', this)">Blog <span><img src="icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="blog">
+                        A blog (a shortened version of “weblog”) is an online journal or informational website displaying information in reverse chronological order, with the latest 
+                        posts appearing first, at the top. It is a platform where a writer or a group of writers share their views on an individual subject.
+                    </div>
+                </ol>
+            </div>
+
+            <h3 class="content-header">Contact Me</h3> <hr>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>WhatsApp</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-wasap" id="social-btn-wasap" onclick="whatsapp()">WhatsApp</button> <span class="loader">Loading..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-face" onclick="faceTo()">Facebook</button> <span class="loader">Loading..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-insta" onclick="instaTo()">Instagram</button> <span class="loader">Loading..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-email" onclick="mailTo()">Email</button> <span class="loader">Loading..</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="swahili" onclick="window.location='sw/index.html'">
+                Bofya hapa kwa Kiswahili
+            </div>
+
+        </div>
+
+        
+
+        <!-- FOOT SECTION -->
+        <div class="foot">&copy; Mr. Joram, <span id="year"></span></div>
+
+    </div>
+
+    <script src="js/date.js"></script>
+    <!-- <script src="js/list_navigation.js"></script> -->
+    <script src="js/anno.js"></script>
+    <script>
+        function whatsapp(){
+            window.location="https://api.whatsapp.com/send?phone=+255752112544&amp;text=Hey_Joram";
+        }
+
+        function mailTo(){
+            var email = document.createElement("a");
+            email.href = "mailto:joramallan@gmail.com";
+            email.click();
+        }
+
+        function instaTo(){
+            var instaElem = document.createElement("a");
+            instaElem.href = "https://www.instagram.com/joramkingu/";
+            instaElem.click();
+        }
+
+        function faceTo(){
+            var faceElem = document.createElement("a");
+            faceElem.href = "https://web.facebook.com/sunbuct.makala/";
+            faceElem.click();
+        }
+
+        function show_list_content(id, e){
+            var list_content = $(".list-content");
+            if ($("#"+id).is(":visible")) {
+                $("#"+id).hide(300);
+                $(e).find("img").attr("src", "icon/dwn.png");
+            }else{
+                $("#"+id).show(300);
+                $(e).find("img:nth-child(1)").attr("src", "icon/up.png");
+            }
+        }
+    </script>
+    <script src="js/picture.js"></script>
+    <script src="js/loader.js"></script>
+</body>
+</html>

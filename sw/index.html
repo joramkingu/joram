@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery.js"></script>
+    <title>Mr. Joramu | Msanidi wa wavuti</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEAD SECTION -->
+        <div class="head">
+            <div id="date"></div>
+        </div>
+
+        <!-- MENU SECTION -->
+        <div class="menu">
+            <h3>MSANIDI WA WAVUTI</h3>
+            <P>Mr. Joram</P>
+        </div>
+
+        <!-- ANNOUNCEMENT -->
+        <div class="announcement" id="anno"></div>
+
+        <!-- BODY SECTION -->
+        <div class="content">
+            <h3 class="content-header">About Me</h3> <hr>
+            <div><img src="../image/joram0.png" alt="PICTURES" id="pic" width="100%"></div>
+
+            <p class="info">
+                Naitwa Joram kutoka Tanzania. Mimi ni Mwanasayansi wa Kompyuta. Nimebobea katika teknolojia za wavuti.
+                Programu zinazotegemea Wavuti ni programu ambazo zinaweza kutumika kupitia kivinjari kama Firefox, Google chrome, Safari na Opera Mini.
+            </p>
+
+            <p class="info">
+                Karibu asilimia 80 ya Watanzania wanatumia simu za kisasa leo kuwasaidia kupata mtandao.
+                Tovuti ni nyenzo muhimu ya kukusaidia kutangaza biashara yako na pia kufuatilia habari za biashara yako au huduma.
+            </p>
+
+            <h3 class="content-header">Huduma Zangu</h3> <hr>
+            <div id="content_list">
+                <div class="small-title">Zifuatazo ni kati ya huduma zinazotolewa:</div> <br>
+                <ol id="content-list-items">
+                    <li class="list" onclick="show_list_content('business', this)">Mfumo wa Habari za Biashara <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="business">
+                        Mfumo ya habari ya biashara hutoa habari ambayo mashirika hutumia katika kufanya maamuzi bora
+                        katika shughuli za shirika kawaida hutumia mifumo ya teknolojia ya habari.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('school', this)">Mfumo wa Habari ya Wanafunzi <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="school">
+                            Mfumo ya habari ya wanafunzi hutoa uwezo kwa <em> kusajili wanafunzi </em> katika kozi; <em> kuandika kumbukumbu </em>, nakala za
+                            mafanikio ya kitaaluma na shughuli za mitaala, na matokeo ya alama za upimaji wa wanafunzi; <em> kuunda ratiba za wanafunzi </em>;
+                            <em> kufuatilia mahudhurio ya wanafunzi </em>; na <em> kusimamia </em> mahitaji mengine ya data yanayohusiana na wanafunzi katika taasisi ya elimu.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('student', this)">Mfumo wa kuhifadhi Tiketi <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="student">
+                        <em>Mfumo wa Kuhifadhi Tiketi ya Basi</em> ni programu inayotegemea wavuti ambayo inaruhusu wageni kukagua upatikanaji wa tiketi ya basi, kununua tiketi ya basi na kulipa nauli. Mfumo huu ni
+                        imewekwa kwa watumiaji wote wa nyumbani / ofisi baada ya kupata ufikiaji kutoka kwa msimamizi. <br> <br>
+
+                        Matumizi ya kusafiri kwa basi ni biashara kubwa inayokua nchini Tanzania na nchi zingine; kwa hivyo basi
+                        mfumo wa kuweka akiba unashughulikia utunzaji wa kumbukumbu za kila abiria ambaye alikuwa ametenga kiti kwa safari.
+                        Pia ni pamoja na utunzaji wa habari kama ratiba na maelezo ya kila basi.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('employee', this)">Mfumo wa usimamizi wa rekodi ya wafanyakazi  <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="employee">
+                        Mfumo wa Usimamizi wa Wafanyakazi unatumiwa na wafanyabiashara kuchanganya kazi kadhaa muhimu za HR, kama vile kuhifadhi data ya mfanyakazi, kusimamia mishahara, michakato ya ajira, usimamizi wa faida, na kutunza ufuatiliaji wa kumbukumbu za mahudhurio.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('hotel', this)">Mfumo wa Usimamizi wa Hoteli <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="hotel">
+                        Mfumo ya habari katika tasnia ya Hoteli hurejelea mifumo ya kompyuta kwenye hoteli ambayo hutoa habari kuhusu shughuli za biashara ya hoteli hiyo. <br> <br>
+                        Mfumo ya habari inachukua jukumu muhimu katika tasnia ya hoteli kwani zinawezesha upangaji, usimamizi, shughuli za jumla za hoteli na vile vile utengenezaji wa sera.
+                    </div>
+
+                    <li class="list" onclick="show_list_content('blog', this)">Blog <span><img src="../icon/dwn.png" alt="Down" class="down"></span></li>
+                    <div class="list-content" id="blog">
+                        Blogi ni jarida la mtandaoni au wavuti ya habari inayoonyesha habari kwa mpangilio, na ya hivi karibuni
+                        machapisho yanaonekana kwanza, juu. Ni jukwaa ambalo mwandishi au kikundi cha waandishi hushiriki maoni yao juu ya somo la kibinafsi.
+                    </div>
+                </ol>
+            </div>
+
+            <h3 class="content-header">Mawasiliano</h3> <hr>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>WhatsApp</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-wasap" id="social-btn-wasap" onclick="whatsapp()">WhatsApp</button> <span class="loader">Inapakia..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-face" onclick="faceTo()">Facebook</button> <span class="loader">Inapakia..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-insta" onclick="instaTo()">Instagram</button> <span class="loader">Inapakia..</span></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> >> </td>
+                        <td><button class="social-btn-email" onclick="mailTo()">Email</button> <span class="loader">Inapakia..</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="swahili" onclick="window.location='../index.html'">
+                Click here for English
+            </div>
+
+        </div>
+
+        
+
+        <!-- FOOT SECTION -->
+        <div class="foot">&copy; Mr. Joram, <span id="year"></span></div>
+
+    </div>
+
+    <script src="../js/date.js"></script>
+    <!-- <script src="js/list_navigation.js"></script> -->
+    <script src="../js/anno_swahili.js"></script>
+    <script>
+        function whatsapp(){
+            window.location="https://api.whatsapp.com/send?phone=+255752112544&amp;text=Hey_Joram";
+        }
+
+        function mailTo(){
+            var email = document.createElement("a");
+            email.href = "mailto:joramallan@gmail.com";
+            email.click();
+        }
+
+        function instaTo(){
+            var instaElem = document.createElement("a");
+            instaElem.href = "https://www.instagram.com/joramkingu/";
+            instaElem.click();
+        }
+
+        function faceTo(){
+            var faceElem = document.createElement("a");
+            faceElem.href = "https://web.facebook.com/sunbuct.makala/";
+            faceElem.click();
+        }
+
+        function show_list_content(id, e){
+            var list_content = $(".list-content");
+            if ($("#"+id).is(":visible")) {
+                $("#"+id).hide(300);
+                $(e).find("img").attr("src", "../icon/dwn.png");
+            }else{
+                $("#"+id).show(300);
+                $(e).find("img:nth-child(1)").attr("src", "../icon/up.png");
+            }
+        }
+    </script>
+    <script src="../js/picture_swahili.js"></script>
+    <script src="../js/loader.js"></script>
+</body>
+</html>
